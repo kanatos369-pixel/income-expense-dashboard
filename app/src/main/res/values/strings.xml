@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:background="#FFFFFF"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/typeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支出"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1F2937"/>
+
+            <TextView
+                android:id="@+id/categoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="食物"
+                android:textSize="14sp"
+                android:textColor="#6B7280"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/noteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="午餐"
+                android:textSize="13sp"
+                android:textColor="#9CA3AF"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/amountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-NT$ 120"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#B91C1C"
+            android:layout_marginEnd="12dp"/>
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="刪除記錄"
+            android:src="@android:drawable/ic_delete" />
+    </LinearLayout>
+
+</LinearLayout>

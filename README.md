@@ -1,2 +1,9 @@
-# income-expense-dashboard
-A daily income and expense tracking dashboard app for Android and iOS
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="sharedpref" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="sharedpref" path="." />
+    </device-transfer>
+</data-extraction-rules>
